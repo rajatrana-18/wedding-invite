@@ -156,8 +156,10 @@
   .divider svg{width:20px; height:20px;}
 
   /* couple caricature */
-  .couple-row{display:flex; justify-content:center; margin:-6px 0 18px;}
-  .couple-row svg{width:min(260px,70%); height:auto;}
+  /* .couple-row{display:flex; justify-content:center; margin:-6px 0 18px;}
+  .couple-row svg{width:min(260px,70%); height:auto;} */
+  .couple-row{ display:flex; justify-content:center; align-items:center; margin:-6px 0 18px; height:130px;}
+  .couple-row img{ width:200px; height:130px; object-fit:contain; display:block;}
 
   /* countdown */
   .countdown{
@@ -312,9 +314,8 @@
     <section id="countdown-section">
       <div class="section-label">The wait is almost over</div>
       <h2 class="section-title">Counting down ...</h2>
-      <div class="couple-row">
+      <!-- <div class="couple-row">
         <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
-          <!-- groom -->
           <g transform="translate(30,10)">
             <ellipse cx="30" cy="20" rx="17" ry="10" fill="#e8972e"/>
             <path d="M13,18 a17,13 0 0 1 34,0 Z" fill="#7a1220"/>
@@ -325,7 +326,7 @@
             <path d="M10,44 Q30,54 50,44" fill="none" stroke="#c9a24d" stroke-width="2"/>
             <rect x="18" y="34" width="24" height="14" fill="#c9a24d" opacity=".55"/>
           </g>
-          <!-- bride -->
+              
           <g transform="translate(110,10)">
             <ellipse cx="30" cy="20" rx="17" ry="10" fill="#e8972e"/>
             <path d="M12,10 Q30,-2 48,10 L48,30 Q30,20 12,30 Z" fill="#7a1220"/>
@@ -339,7 +340,14 @@
           </g>
           <path d="M70,60 Q100,50 130,60" fill="none" stroke="#c9a24d" stroke-width="2" stroke-dasharray="2 4"/>
         </svg>
+      </div> -->
+
+      <div class="couple-row">
+        <img
+          src="assets/couple-caricature.png"
+          alt="Wedding couple illustration">
       </div>
+      
       <div class="countdown" id="countdown">
         <div class="cd-box"><div class="num" id="cd-days">00</div><div class="lbl">Days</div></div>
         <div class="cd-box"><div class="num" id="cd-hours">00</div><div class="lbl">Hours</div></div>
